@@ -1,2 +1,2 @@
 # yw4rf.github.io
-Portfolio/Blog using HUGO and TailwindCSS
+Portfolio/Blog using Astro and TailwindCSS
