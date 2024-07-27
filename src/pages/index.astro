@@ -1,52 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+
 import ImgBackground from "../img/image.jpg";
 ---
 
 <Layout title="yw4rf / home">
-	<h1
-		class="text-[#000000] font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center pt-24 mb-[-24px] relative z-[3]"
-	>
-		tobig<span class="text-[#504236]">fioroni</span>
+	<h1 class="text-[#ffffff] font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center mb-[-24px] relative z-[3]">
+		tobig<span class="text-[#806f61]">fioroni</span>
 	</h1>
-	<div
-		class="px-4 sm:px-8 md:px-16 lg:px-52 xl:px-[400px] mx-auto text-center"
-	>
-		<div class="text-left relative max-w-[600px] mx-auto">
+		<div class="text-left max-w-[600px] mx-auto">
 			<img
 				src={ImgBackground.src}
 				alt="A-Seated-Saint-or-Prophet"
 				class="w-full max-w-[600px] mx-auto mb-4 relative z-[2]"
 			/>
-			<div
-				class="top-0 left-0 right-0 bottom-0 flex items-left justify-left mt-6"
-			>
-				<p
-					class="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl text-left max-w-[90%] z-[3]"
-				>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Mollitia officia vitae nesciunt id hic voluptatum magni
-					repudiandae animi facilis dolores est, dolore pariatur dolor
-					adipisci omnis. Eius iste modi ratione. Et ullam, dolorem
-					commodi necessitatibus laborum dignissimos.
+			<div class="flex items-start justify-start mt-6">
+				<p class="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl text-left  z-[3]">
+					I am Tobias Fioroni AKA yw4rf, i'm 19yo and i'm living in Argentina. I'm certificated in CHE / ISC2 CC / CISCO CC / Google CERTIFIED SOC. Im currently studying Cybersecurity Tech UNSO University at BA <a class="underline text-[#806f61] hover:text-[#c5ae9b]" href="/blog">../about/</a>
 				</p>
 			</div>
-			<div
-				class="inline-block text-left text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-5xl mt-4"
-			>
-				<i class="fab fa-github mr-3"></i>
-				<i class="fab fa-linkedin mr-3"></i>
-				<i class="fab fa-instagram mr-3"></i>
-				<i class="fab fa-twitter mr-3"></i>
-				<i class="fab fa-whatsapp mr-3"></i>
-			</div>
-			<div class="mt-4">
-				<p class="text-lg font-medium">
-					AVALAIBLE FOR WHATEVER YOU WANT <span
-						class="block underline mt-[-3px] text-[#504236]"
-						><a href="">tobigfioroni@gmail.com</a></span>
-				</p>
-			</div>
+			<Footer />
 		</div>
-	</div>
 </Layout>

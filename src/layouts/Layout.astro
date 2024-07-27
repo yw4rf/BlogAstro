@@ -24,7 +24,9 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Nav />
+		<main class="pt-28 max-w-[340px] sm:max-w-[450px] md:max-w-[600px] lg:max-w-[700px] mx-auto">
 			<slot />
+		</main>
 	</body>
 </html>
 <style is:global>
@@ -41,9 +43,9 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background: #faf3dd;
+		background: #000000;
 		background-size: 224px;
-		color: #000;
+		color: #fff;
 	}
 	code {
 		font-family:

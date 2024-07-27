@@ -1,15 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Title from "../components/Title.astro";
+
 const allPosts = await Astro.glob("../pages/posts/*.md")
 ---
 
 <Layout title="yw4rf / blog">
-    <h1 class="text-white text-6xl text-center pt-24">Astro Art</h1>
+<Title title="Blog"></Title>
     {
         allPosts.map((post) => (
-        <li>
-            <a href={post.url}>{post.frontmatter.title}</a>
+        <li class="list-none">
+            <a href={post.url}>{post.frontmatter.date} {post.frontmatter.title}</a>
         </li>
         ))
     }
+    <Footer />
 </Layout>
