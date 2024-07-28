@@ -24,7 +24,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Nav />
-		<main class="pt-28 max-w-[340px] sm:max-w-[450px] md:max-w-[600px] lg:max-w-[700px] mx-auto">
+		<main class="pt-28 sm:max-w-[490px] md:max-w-[600px] lg:max-w-[700px] mx-auto">
 			<slot />
 		</main>
 	</body>
@@ -58,4 +58,41 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
+
+	@media (max-width: 639px) {
+		main {
+			max-width: 400px;
+		}
+	}
+
+	@media (max-width: 460px) {
+		main {
+			max-width: 360px;
+		}
+	}
+
+	@media (max-width: 400px) {
+		main {
+			max-width: 320px;
+		}
+	}
+
+	@media (max-width: 345px) {
+		main {
+			max-width: 300px;
+		}
+	}
+
+	@media (max-width: 330px) { 
+		main {
+			max-width: 280px;
+		}
+	 }
+
+	 @media (max-width: 295px) { 
+		main {
+			max-width: 260px;
+		}
+	 }
+
 </style>

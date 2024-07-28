@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/Layout.astro"
-title: 'My third post in the blog of my portfolio with Astro and TailwindCSS'
-date: 2019-03-03
+title: 'Second blogi in Astro mother fucker'
+date: "12/16/2004"
 description: 'Este es la primera publicación de mi nuevo blog Astro.'
 author: 'Alumno de Astro'
 image:
