@@ -22,7 +22,7 @@ const sortedPosts = allPosts.sort((a, b) => {
     <ul>
         {sortedPosts.map((post) => (
             <li class="list-none text-left">
-                <a href={post.url}>{post.frontmatter.date}<span class="text-[#c5ae9b] font-normal pl-5">{post.frontmatter.title}</span>
+                <a class="font-semibold text-xl" href={post.url}>{post.frontmatter.date}<span class="text-[#c5ae9b] font-semibold pl-5">{post.frontmatter.title}</span>
                 </a>
             </li>
         ))}
