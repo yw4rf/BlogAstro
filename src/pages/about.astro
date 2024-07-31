@@ -1,10 +1,42 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
-import Title from "../components/Title.astro";
+import Passions from "../components/Passions.astro";
+import Knowledge from "../components/Knowledge.astro";
+import ImgAboutMe from "../img/ImgAboutMe.jpg";
 ---
 
 <Layout title="yw4rf / about">
-    <Title title="About"></Title>
+    <div class="text-[#9CA3AF] my-10">
+        <div class="flex flex-col md:flex-row justify-between items-start">
+            <h2 class="text-[40px] mb-10 text-[#9b7d73] font-semibold md:w-1/2">
+                About me/
+            </h2>
+            <div class="md:w-1/2">
+                <h1 class="text-[#fff] text-xl md:my-3">TOBIAS G. FIORONI</h1>
+                <p class="text-lg my-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Debitis reprehenderit asperiores facere dolorem
+                    exercitationem incidunt harum quas neque voluptatum sed
+                    tenetur quod, dolor hic quae ipsum officiis iusto, assumenda
+                    delectus!
+                </p>
+                <img src={ImgAboutMe.src} alt="tobigfioroni" class="" />
+            </div>
+        </div>
+        <h2
+            class="text-[40px] text-center mt-24 mb-10 text-[#9b7d73] font-semibold"
+        >
+            Passions/
+        </h2>
+        <Passions />
+        <h2
+            class="text-[40px] text-right mt-14 mb-8 text-[#9b7d73] font-semibold"
+        >
+            Knowledge/
+        </h2>
+        <Knowledge />
+    </div>
+
     <Footer />
 </Layout>
