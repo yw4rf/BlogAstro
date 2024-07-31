@@ -9,9 +9,11 @@ import ImgAboutMe from "../img/ImgAboutMe.jpg";
 <Layout title="yw4rf / about">
     <div class="text-[#9CA3AF] my-10">
         <div
-            class="flex flex-col md:flex-row justify-between items-start bg-[#4242421a] pb-[7px] px-[15px] rounded-[8px]"
+            class="flex flex-col md:flex-row justify-between items-start border-[#4242421a] border-[8px] pt-[80px] pb-[7px] px-[15px] rounded-[8px] mb-16"
         >
-            <h2 class="text-[40px] mb-10 text-[#9b7d73] font-semibold md:w-1/2">
+            <h2
+                class="text-[40px] ml-2 mt-[-110px] mb-6 text-[#9b7d73] font-semibold md:w-1/2"
+            >
                 About me/
             </h2>
             <div class="md:w-1/2">
@@ -26,23 +28,17 @@ import ImgAboutMe from "../img/ImgAboutMe.jpg";
                 <img src={ImgAboutMe.src} alt="tobigfioroni" class="" />
             </div>
         </div>
-        <div class="bg-[#4242421a] rounded-[8px] px-[15px]">
+        <h2 class="text-[40px] text-center text-[#9b7d73] font-semibold mb-[-95px]">
+            Passions/
+        </h2>
+        <Passions />
             <h2
-                class="text-[40px] text-center mt-24 mb-10 text-[#9b7d73] font-semibold"
-            >
-                Passions/
-            </h2>
-            <Passions />
-        </div>
-        <div class="bg-[#4242421a] pb-[7px] rounded-[8px] px-[15px]">
-            <h2
-                class="text-[40px] text-right mt-14 mb-8 text-[#9b7d73] font-semibold"
+                class="text-[40px] text-right mt-14 mb-[-33px] mr-3 text-[#9b7d73] font-semibold"
             >
                 Knowledge/
             </h2>
             <Knowledge />
         </div>
-    </div>
 
     <Footer />
 </Layout>
