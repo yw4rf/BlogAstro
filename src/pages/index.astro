@@ -9,32 +9,32 @@ import IndexWorkCard from "../components/IndexWorkCard.astro";
 	<h1
 		class="text-[#ffffff] text-center font-semibold text-[40px] sm:text-5xl md:text-6xl lg:text-7xl mb-[-22px] sm:mb-[-18px] md:mb-[-24px] relative z-[3]"
 	>
-		tobig<span class="text-[#806f61]">fioroni</span>
+		tobig<span class="text-[#9b7d73]">fioroni</span>
 	</h1>
-	<div class="text-left max-w-[600px] mx-auto">
+	<div class="max-w-[600px] mx-auto">
 		<img
 			src={ImgBackground.src}
 			alt="A-Seated-Saint-or-Prophet"
 			class="w-full mx-auto mb-4 relative z-[2]"
 		/>
-		<div class="flex items-start justify-start my-6">
+
+		<a
+			class="underline relative float-right mt-[-45px] mr-4 z-[3] font-bold text-[38px] sm:text-5xl text-[#9b7d73]"
+			href="/about">.../About/</a
+		>
+		<div class="mt-10 mb-9 sm:mb-16">
 			<p
 				class="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl z-[3]"
 			>
-				Tobias G. Fioroni aka yw4rf, is a freelance web developer with
+				Tobias G. Fioroni aka yw4rf, is a freelance developer with
 				19yo based in Argentina with a deep passion for programming,
 				hardware and cybersecurity. He is currently pursuing a technique
 				in Cybersecurity at UNO University in Buenos Aires and is
 				working towards obtaining the ISC2 CC certification (Certified
-				in Cybersecurity) <a
-					class="underline font-semibold text-lg md:text-xl lg:text-2xl text-[#c5ae9b]"
-					href="/about">.../about/</a
-				>
+				in Cybersecurity)
 			</p>
 		</div>
-		<div class="mt-10">
 			<IndexWorkCard />
-		</div>
 		<Footer />
 	</div>
 </Layout>
