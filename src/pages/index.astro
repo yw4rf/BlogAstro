@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
+import KnowLanguages from "../components/KnowLanguages.astro";
+import KnowFrakeworksLibraries from "../components/KnowFrameworksLibraries.astro";
+import KnowTools from "../components/KnowTools.astro";
 import ImgBackground from "../img/image.jpg";
 import IndexWorkCard from "../components/IndexWorkCard.astro";
 ---
@@ -25,15 +28,23 @@ import IndexWorkCard from "../components/IndexWorkCard.astro";
 			<p
 				class="text-base font-semibold sm:text-lg md:text-xl lg:text-2xl z-[3]"
 			>
-				Tobias G. Fioroni aka yw4rf, is a freelance developer with
-				19yo based in Argentina with a deep passion for programming,
-				hardware and cybersecurity. He is currently pursuing a technique
-				in Cybersecurity at UNO University in Buenos Aires and is
-				working towards obtaining the ISC2 CC certification (Certified
-				in Cybersecurity)
+				Tobias G. Fioroni aka yw4rf, is a freelance developer with 19yo
+				based in Argentina with a deep passion for programming, hardware
+				and cybersecurity. He is currently pursuing a technique in
+				Cybersecurity at UNO University in Buenos Aires and is working
+				towards obtaining the ISC2 CC certification (Certified in
+				Cybersecurity)
 			</p>
 		</div>
-			<IndexWorkCard />
+		<IndexWorkCard />
+		<h2
+			class="text-[40px] text-right mt-14 mb-[-33px] mr-3 text-[#9b7d73] font-semibold"
+		>
+			Knowledge/
+		</h2>
+		<KnowLanguages />
+		<KnowFrakeworksLibraries />
+		<KnowTools />
 		<Footer />
 	</div>
 </Layout>
